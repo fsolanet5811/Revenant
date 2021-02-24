@@ -1,0 +1,1260 @@
+fileFormatVersion: 2
+guid: f1e988dfbe26dd54181fc8bd8a1e9d01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8522751878820737179
+    second: skull_mage_0
+  - first:
+      213: 7103287832464277199
+    second: skull_mage_1
+  - first:
+      213: 1958719564206838158
+    second: skull_mage_2
+  - first:
+      213: -3254844750669281403
+    second: skull_mage_3
+  - first:
+      213: -430778254910176609
+    second: skull_mage_4
+  - first:
+      213: 3829876408079313256
+    second: skull_mage_5
+  - first:
+      213: 8408592766680411245
+    second: skull_mage_6
+  - first:
+      213: 1750497922648704847
+    second: skull_mage_7
+  - first:
+      213: -5942357291742313468
+    second: skull_mage_8
+  - first:
+      213: -4491530372020554353
+    second: skull_mage_9
+  - first:
+      213: -7490316099529605691
+    second: skull_mage_10
+  - first:
+      213: 5672627027649792336
+    second: skull_mage_11
+  - first:
+      213: 6210615183884629565
+    second: skull_mage_12
+  - first:
+      213: -8489949252364301804
+    second: skull_mage_13
+  - first:
+      213: -1605231683115537542
+    second: skull_mage_14
+  - first:
+      213: 6865608684883156561
+    second: skull_mage_15
+  - first:
+      213: 5209872404289807407
+    second: skull_mage_16
+  - first:
+      213: 391118293053042971
+    second: skull_mage_17
+  - first:
+      213: 8646923346190069756
+    second: skull_mage_18
+  - first:
+      213: -8735099444401378600
+    second: skull_mage_19
+  - first:
+      213: -6709427569885981408
+    second: skull_mage_20
+  - first:
+      213: 4504090193083619763
+    second: skull_mage_21
+  - first:
+      213: 4040678548122917080
+    second: skull_mage_22
+  - first:
+      213: -4766529455509256871
+    second: skull_mage_23
+  - first:
+      213: -8209231074633949798
+    second: skull_mage_24
+  - first:
+      213: 4883740618716122467
+    second: skull_mage_25
+  - first:
+      213: -4096307514120807348
+    second: skull_mage_26
+  - first:
+      213: -8582902899792641445
+    second: skull_mage_27
+  - first:
+      213: -3667467373756880362
+    second: skull_mage_28
+  - first:
+      213: -3542846335069310736
+    second: skull_mage_29
+  - first:
+      213: -6803132615584105074
+    second: skull_mage_30
+  - first:
+      213: 5584216911732312060
+    second: skull_mage_31
+  - first:
+      213: -6628798464360835759
+    second: skull_mage_32
+  - first:
+      213: 2117345536859842777
+    second: skull_mage_33
+  - first:
+      213: -6197880344677133741
+    second: skull_mage_34
+  - first:
+      213: 3873481524308677079
+    second: skull_mage_35
+  - first:
+      213: -5975349574255994933
+    second: skull_mage_36
+  - first:
+      213: 5130869030788235636
+    second: skull_mage_37
+  - first:
+      213: 7284308401319397085
+    second: skull_mage_38
+  - first:
+      213: 3112785250586944631
+    second: skull_mage_39
+  - first:
+      213: -6603343144353639688
+    second: skull_mage_40
+  - first:
+      213: -7695088444124040122
+    second: skull_mage_41
+  - first:
+      213: -3075369793686473103
+    second: skull_mage_42
+  - first:
+      213: 3161577095432819386
+    second: skull_mage_43
+  - first:
+      213: -5374516898367451952
+    second: skull_mage_44
+  - first:
+      213: 1150917384899163595
+    second: skull_mage_45
+  - first:
+      213: 8332171438944942264
+    second: skull_mage_46
+  - first:
+      213: 3394364896785229925
+    second: skull_mage_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skull_mage_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 200
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9037e5ada5e64670800000000000000
+      internalID: 8522751878820737179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 200
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce336716a2f39260800000000000000
+      internalID: 7103287832464277199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 200
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81182fd015ce2b10800000000000000
+      internalID: 1958719564206838158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 200
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5870055b1f774d2d0800000000000000
+      internalID: -3254844750669281403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 200
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92cd13a571950af0800000000000000
+      internalID: -430778254910176609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 200
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86967353d44762530800000000000000
+      internalID: 3829876408079313256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 200
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ca7e6129251b470800000000000000
+      internalID: 8408592766680411245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 200
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47098b06940b4810800000000000000
+      internalID: 1750497922648704847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 200
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4044f31f681888da0800000000000000
+      internalID: -5942357291742313468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 200
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8536dd7ce0eaa1c0800000000000000
+      internalID: -4491530372020554353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_10
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 200
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdf520613d0d0890800000000000000
+      internalID: -7490316099529605691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_11
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 200
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059885e0a3839be40800000000000000
+      internalID: 5672627027649792336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 136
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d363710ca99803650800000000000000
+      internalID: 6210615183884629565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 136
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a8bbbf224ad2a80800000000000000
+      internalID: -8489949252364301804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_14
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 136
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b22b10a4219b9e0800000000000000
+      internalID: -1605231683115537542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 136
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e1c4d29ba874f50800000000000000
+      internalID: 6865608684883156561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 136
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24edce395f2d4840800000000000000
+      internalID: 5209872404289807407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_17
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 136
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11759ae3088d6500800000000000000
+      internalID: 391118293053042971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_18
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 136
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffe0b158fa000870800000000000000
+      internalID: 8646923346190069756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_19
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 136
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da6ebaf551b6c680800000000000000
+      internalID: -8735099444401378600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_20
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 136
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025dbba5c2353e2a0800000000000000
+      internalID: -6709427569885981408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_21
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 136
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9d11bba2eb18e30800000000000000
+      internalID: 4504090193083619763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_22
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 136
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d858682bbf531830800000000000000
+      internalID: 4040678548122917080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 136
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9554fe0e6b2e9ddb0800000000000000
+      internalID: -4766529455509256871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_24
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 72
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d585df4d3f21e80800000000000000
+      internalID: -8209231074633949798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_25
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 72
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d88b1b73886c340800000000000000
+      internalID: 4883740618716122467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 72
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cd012e40ef627c0800000000000000
+      internalID: -4096307514120807348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_27
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 72
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52803c694763e880800000000000000
+      internalID: -8582902899792641445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_28
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 72
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ae2e9cad98a1dc0800000000000000
+      internalID: -3667467373756880362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_29
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 72
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f03660770845dec0800000000000000
+      internalID: -3542846335069310736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_30
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 72
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d3c304eea6691a0800000000000000
+      internalID: -6803132615584105074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 72
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7888cd1bf1f7d40800000000000000
+      internalID: 5584216911732312060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_32
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 72
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551e14eae6c104a0800000000000000
+      internalID: -6628798464360835759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_33
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 72
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d82a4f2c82526d10800000000000000
+      internalID: 2117345536859842777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_34
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 72
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352d42f0aa4bcf9a0800000000000000
+      internalID: -6197880344677133741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 72
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1157c7cee51c530800000000000000
+      internalID: 3873481524308677079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 8
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc790b1983b431da0800000000000000
+      internalID: -5975349574255994933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 8
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4718f21f232843740800000000000000
+      internalID: 5130869030788235636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_38
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 8
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd64907a5ef071560800000000000000
+      internalID: 7284308401319397085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_39
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 8
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7746f4371b5d23b20800000000000000
+      internalID: 3112785250586944631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_40
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 8
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f25ace65663c54a0800000000000000
+      internalID: -6603343144353639688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_41
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 8
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644f5c494dd853590800000000000000
+      internalID: -7695088444124040122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_42
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 8
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176f95677771255d0800000000000000
+      internalID: -3075369793686473103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_43
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 8
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2d8471e9d20eb20800000000000000
+      internalID: 3161577095432819386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_44
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 8
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc49793b51e965b0800000000000000
+      internalID: -5374516898367451952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_45
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 8
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc57cb48341e8ff00800000000000000
+      internalID: 1150917384899163595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_46
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 8
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8f7f927c1d1a370800000000000000
+      internalID: 8332171438944942264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_mage_47
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 8
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56860f6b3e43b1f20800000000000000
+      internalID: 3394364896785229925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

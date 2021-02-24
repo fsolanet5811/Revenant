@@ -1,0 +1,1548 @@
+fileFormatVersion: 2
+guid: c1719d3d982635243bf5ac38ae2fd56b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3397209764660123113
+    second: cyclops_0
+  - first:
+      213: -5121532815367140073
+    second: cyclops_1
+  - first:
+      213: 7888643704495989468
+    second: cyclops_2
+  - first:
+      213: 6705992817222436733
+    second: cyclops_3
+  - first:
+      213: 6816740333856155444
+    second: cyclops_4
+  - first:
+      213: -3640002186821716800
+    second: cyclops_5
+  - first:
+      213: -7671938497984692314
+    second: cyclops_6
+  - first:
+      213: 8473839517840972384
+    second: cyclops_7
+  - first:
+      213: 1833721113108241234
+    second: cyclops_8
+  - first:
+      213: -3928810400821298732
+    second: cyclops_9
+  - first:
+      213: -3128882773806430354
+    second: cyclops_10
+  - first:
+      213: 1286688315952683107
+    second: cyclops_11
+  - first:
+      213: 7810305684766152797
+    second: cyclops_12
+  - first:
+      213: -3259033416976578068
+    second: cyclops_13
+  - first:
+      213: -7485950737996111338
+    second: cyclops_14
+  - first:
+      213: -786608476450321446
+    second: cyclops_15
+  - first:
+      213: 348934035169081228
+    second: cyclops_16
+  - first:
+      213: -260063816468097996
+    second: cyclops_17
+  - first:
+      213: -8028441657836403930
+    second: cyclops_18
+  - first:
+      213: -7806407715491227353
+    second: cyclops_19
+  - first:
+      213: -5012617425521958320
+    second: cyclops_20
+  - first:
+      213: -9016545220334747269
+    second: cyclops_21
+  - first:
+      213: -8636821624289786931
+    second: cyclops_22
+  - first:
+      213: -6282820164132329419
+    second: cyclops_23
+  - first:
+      213: -2569831758973375622
+    second: cyclops_24
+  - first:
+      213: 438098315178679190
+    second: cyclops_25
+  - first:
+      213: -2332829024092713980
+    second: cyclops_26
+  - first:
+      213: 538833472262795484
+    second: cyclops_27
+  - first:
+      213: 7551861058287693418
+    second: cyclops_28
+  - first:
+      213: -2587137227291283257
+    second: cyclops_29
+  - first:
+      213: -4240824724548445403
+    second: cyclops_30
+  - first:
+      213: -1540064637297937398
+    second: cyclops_31
+  - first:
+      213: 3062991545319173482
+    second: cyclops_32
+  - first:
+      213: 4258953744746279340
+    second: cyclops_33
+  - first:
+      213: -8245548331104745201
+    second: cyclops_34
+  - first:
+      213: 7321050868103605625
+    second: cyclops_35
+  - first:
+      213: -2752363436665075204
+    second: cyclops_36
+  - first:
+      213: -8208739527614162799
+    second: cyclops_37
+  - first:
+      213: 7850034527147984107
+    second: cyclops_38
+  - first:
+      213: -9040213773480727922
+    second: cyclops_39
+  - first:
+      213: -9130163138632074641
+    second: cyclops_40
+  - first:
+      213: 3639940993620766407
+    second: cyclops_41
+  - first:
+      213: -4078122061339651651
+    second: cyclops_42
+  - first:
+      213: 3742881161694662781
+    second: cyclops_43
+  - first:
+      213: 4059245263404902575
+    second: cyclops_44
+  - first:
+      213: 4964504576839182138
+    second: cyclops_45
+  - first:
+      213: -2430618731343057603
+    second: cyclops_46
+  - first:
+      213: -8887187918452227749
+    second: cyclops_47
+  - first:
+      213: 2039200313582750416
+    second: cyclops_48
+  - first:
+      213: 426236769841919839
+    second: cyclops_49
+  - first:
+      213: 4684290260474856638
+    second: cyclops_50
+  - first:
+      213: -3101288920939291268
+    second: cyclops_51
+  - first:
+      213: 8407894088088182835
+    second: cyclops_52
+  - first:
+      213: -8834803985265558130
+    second: cyclops_53
+  - first:
+      213: 4686263367280392330
+    second: cyclops_54
+  - first:
+      213: 6930177115584449111
+    second: cyclops_55
+  - first:
+      213: -7424261133390412484
+    second: cyclops_56
+  - first:
+      213: -8229088738289469832
+    second: cyclops_57
+  - first:
+      213: 274541644876313396
+    second: cyclops_58
+  - first:
+      213: 7003125492026834680
+    second: cyclops_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cyclops_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ae1fdd7bfaad0d0800000000000000
+      internalID: -3397209764660123113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d098a1a09ace8b0800000000000000
+      internalID: -5121532815367140073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2ea1647a71a7d60800000000000000
+      internalID: 7888643704495989468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 947
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d774dd8ffe8701d50800000000000000
+      internalID: 6705992817222436733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_4
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437e29d873de99e50800000000000000
+      internalID: 6816740333856155444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_5
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4b8d0fb4d1c7dc0800000000000000
+      internalID: -3640002186821716800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af7af0759cc78590800000000000000
+      internalID: -7671938497984692314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 947
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a14982520299570800000000000000
+      internalID: 8473839517840972384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 948
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b53fb03afa27910800000000000000
+      internalID: 1833721113108241234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 884
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9bf2591cf0a79c0800000000000000
+      internalID: -3928810400821298732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 884
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67cd6bd1b9f394d0800000000000000
+      internalID: -3128882773806430354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_11
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 885
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3685109c43c3bd110800000000000000
+      internalID: 1286688315952683107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_12
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 885
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5853b7b3a7c36c60800000000000000
+      internalID: 7810305684766152797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 884
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9cbf5df5695c2d0800000000000000
+      internalID: -3259033416976578068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_14
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 884
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6122baf477f8c1890800000000000000
+      internalID: -7485950737996111338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_15
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 884
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb0edf12c76515f0800000000000000
+      internalID: -786608476450321446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_16
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 884
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87fb4008a9a7d400800000000000000
+      internalID: 348934035169081228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_17
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 884
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4349c783651146cf0800000000000000
+      internalID: -260063816468097996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 820
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62386b449de359090800000000000000
+      internalID: -8028441657836403930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_19
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 820
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729d64afa811aa390800000000000000
+      internalID: -7806407715491227353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 819
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052a4dc620b9f6ab0800000000000000
+      internalID: -5012617425521958320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_21
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 819
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7183b0d4ebced280800000000000000
+      internalID: -9016545220334747269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_22
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 819
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc38bc71e78d32880800000000000000
+      internalID: -8636821624289786931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_23
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 820
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5382b393950fec8a0800000000000000
+      internalID: -6282820164132329419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_24
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 819
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7befd971af165cd0800000000000000
+      internalID: -2569831758973375622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_25
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 819
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b1ce4b810741600800000000000000
+      internalID: 438098315178679190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_26
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 819
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c8b39cc5020afd0800000000000000
+      internalID: -2332829024092713980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 756
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0705b20325a7700800000000000000
+      internalID: 538833472262795484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 756
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ee75cfe999dc860800000000000000
+      internalID: 7551861058287693418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_29
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 757
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c03d162664a81cd0800000000000000
+      internalID: -2587137227291283257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_30
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 757
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b9892c1609525c0800000000000000
+      internalID: -4240824724548445403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_31
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 756
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0437ba3f5790aae0800000000000000
+      internalID: -1540064637297937398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_32
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 756
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d26c0059ee18a20800000000000000
+      internalID: 3062991545319173482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_33
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 756
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1fb6eadd7da1b30800000000000000
+      internalID: 4258953744746279340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_34
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 756
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09cf2aca7de19d80800000000000000
+      internalID: -8245548331104745201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_35
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 756
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d61e7d9f8999560800000000000000
+      internalID: 7321050868103605625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_36
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 640
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf90ec87904adc9d0800000000000000
+      internalID: -2752363436665075204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_37
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 639
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19899d234e2b41e80800000000000000
+      internalID: -8208739527614162799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_38
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 639
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be40539afcce0fc60800000000000000
+      internalID: 7850034527147984107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_39
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 639
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a661a5875ba8280800000000000000
+      internalID: -9040213773480727922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_40
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 639
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a3874cff42b4180800000000000000
+      internalID: -9130163138632074641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_41
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 639
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cee5286c0ba38230800000000000000
+      internalID: 3639940993620766407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_42
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 449
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db19a2f87999767c0800000000000000
+      internalID: -4078122061339651651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_43
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 449
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70df4ff59261f330800000000000000
+      internalID: 3742881161694662781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_44
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 449
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8af6d6f06555830800000000000000
+      internalID: 4059245263404902575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_45
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 449
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37ec4c0c9675e440800000000000000
+      internalID: 4964504576839182138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_46
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 449
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3de2ed4425b44ed0800000000000000
+      internalID: -2430618731343057603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_47
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 449
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51038cacad5aa480800000000000000
+      internalID: -8887187918452227749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_48
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 257
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da07fc81e1bc4c10800000000000000
+      internalID: 2039200313582750416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_49
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 257
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5733a8751c4ae500800000000000000
+      internalID: 426236769841919839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_50
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 257
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb40d686c21f10140800000000000000
+      internalID: 4684290260474856638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_51
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 257
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d1f81682206f4d0800000000000000
+      internalID: -3101288920939291268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_52
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 248
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3306a9d4027dea470800000000000000
+      internalID: 8407894088088182835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_53
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 252
+        width: 69
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d7a0e8598746580800000000000000
+      internalID: -8834803985265558130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_54
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 65
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a887ca224b3f80140800000000000000
+      internalID: 4686263367280392330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_55
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 65
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ac3f47e5fec2060800000000000000
+      internalID: 6930177115584449111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_56
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 65
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c358688a5d9b7f890800000000000000
+      internalID: -7424261133390412484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_57
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 65
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876b61164676ccd80800000000000000
+      internalID: -8229088738289469832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_58
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 65
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43377e2eb2e5fc300800000000000000
+      internalID: 274541644876313396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cyclops_59
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 65
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fefdb5e789103160800000000000000
+      internalID: 7003125492026834680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

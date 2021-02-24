@@ -1,0 +1,1260 @@
+fileFormatVersion: 2
+guid: fb73aa3a090511f4180083282a1820d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1086997945379058984
+    second: skull_swordsman_0
+  - first:
+      213: -6904078712404678609
+    second: skull_swordsman_1
+  - first:
+      213: 110515557587165021
+    second: skull_swordsman_2
+  - first:
+      213: -4988202831718828456
+    second: skull_swordsman_3
+  - first:
+      213: -4984414949470398304
+    second: skull_swordsman_4
+  - first:
+      213: -7098630336091523824
+    second: skull_swordsman_5
+  - first:
+      213: -8029770691295821918
+    second: skull_swordsman_6
+  - first:
+      213: -4063193720977889905
+    second: skull_swordsman_7
+  - first:
+      213: -652877720314988070
+    second: skull_swordsman_8
+  - first:
+      213: -2961409625616108728
+    second: skull_swordsman_9
+  - first:
+      213: -25014650382818298
+    second: skull_swordsman_10
+  - first:
+      213: 5656999697448457559
+    second: skull_swordsman_11
+  - first:
+      213: 4301428956642258648
+    second: skull_swordsman_12
+  - first:
+      213: -1646466444824339894
+    second: skull_swordsman_13
+  - first:
+      213: -5856302128515656286
+    second: skull_swordsman_14
+  - first:
+      213: 1116443384055661374
+    second: skull_swordsman_15
+  - first:
+      213: -3485870748627992338
+    second: skull_swordsman_16
+  - first:
+      213: -1630148252595231567
+    second: skull_swordsman_17
+  - first:
+      213: 514133459838645701
+    second: skull_swordsman_18
+  - first:
+      213: -4366874935231395561
+    second: skull_swordsman_19
+  - first:
+      213: 5246955831336501678
+    second: skull_swordsman_20
+  - first:
+      213: 7464705537082707971
+    second: skull_swordsman_21
+  - first:
+      213: -5059118343843952648
+    second: skull_swordsman_22
+  - first:
+      213: 7711592952114122710
+    second: skull_swordsman_23
+  - first:
+      213: -5049544276566142551
+    second: skull_swordsman_24
+  - first:
+      213: -4652282562995309340
+    second: skull_swordsman_25
+  - first:
+      213: -7162238828522874216
+    second: skull_swordsman_26
+  - first:
+      213: -3603916728795693595
+    second: skull_swordsman_27
+  - first:
+      213: -3601553796925999528
+    second: skull_swordsman_28
+  - first:
+      213: 1193250509428392995
+    second: skull_swordsman_29
+  - first:
+      213: -7185562579208346250
+    second: skull_swordsman_30
+  - first:
+      213: -7705435795960666618
+    second: skull_swordsman_31
+  - first:
+      213: 1207723524018526963
+    second: skull_swordsman_32
+  - first:
+      213: 6156544492172314465
+    second: skull_swordsman_33
+  - first:
+      213: 7424044954258675068
+    second: skull_swordsman_34
+  - first:
+      213: 2066245424990350771
+    second: skull_swordsman_35
+  - first:
+      213: 4889598070026351802
+    second: skull_swordsman_36
+  - first:
+      213: -2962549140098093247
+    second: skull_swordsman_37
+  - first:
+      213: -3652697944342918544
+    second: skull_swordsman_38
+  - first:
+      213: -1061158885999666206
+    second: skull_swordsman_39
+  - first:
+      213: -5920933702412269237
+    second: skull_swordsman_40
+  - first:
+      213: 875522372603357068
+    second: skull_swordsman_41
+  - first:
+      213: -5777323503785870589
+    second: skull_swordsman_42
+  - first:
+      213: 6644933151265935937
+    second: skull_swordsman_43
+  - first:
+      213: 87736293391231208
+    second: skull_swordsman_44
+  - first:
+      213: -5446389367786437252
+    second: skull_swordsman_45
+  - first:
+      213: -175251561361570799
+    second: skull_swordsman_46
+  - first:
+      213: -6181568075081207005
+    second: skull_swordsman_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skull_swordsman_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 200
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da0a1ab0253ae0f0800000000000000
+      internalID: -1086997945379058984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 200
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2868cd8df8cf20a0800000000000000
+      internalID: -6904078712404678609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 200
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f13286051a88100800000000000000
+      internalID: 110515557587165021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 200
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8563dc304f756cab0800000000000000
+      internalID: -4988202831718828456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 209
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a89ba3130dc3dab0800000000000000
+      internalID: -4984414949470398304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_5
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 200
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015f379c1599c7d90800000000000000
+      internalID: -7098630336091523824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 202
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af387d8916809090800000000000000
+      internalID: -8029770691295821918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 209
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85e387a6d2ac97c0800000000000000
+      internalID: -4063193720977889905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 200
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9bbd62c2380f6f0800000000000000
+      internalID: -652877720314988070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 200
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843babeb2a5f6e6d0800000000000000
+      internalID: -2961409625616108728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_10
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 200
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60460c9de4127aff0800000000000000
+      internalID: -25014650382818298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_11
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 200
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75558e4b043b18e40800000000000000
+      internalID: 5656999697448457559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 136
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dead3b98deb1bb30800000000000000
+      internalID: 4301428956642258648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_13
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 136
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a15a5ed739629e0800000000000000
+      internalID: -1646466444824339894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_14
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 136
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5d57cfd3c3abea0800000000000000
+      internalID: -5856302128515656286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 136
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e330976b7576e7f00800000000000000
+      internalID: 1116443384055661374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_16
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 136
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee08a17e503bf9fc0800000000000000
+      internalID: -3485870748627992338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_17
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 143
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b466d81dcc8069e0800000000000000
+      internalID: -1630148252595231567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_18
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 144
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c533d068a1922700800000000000000
+      internalID: 514133459838645701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_19
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 144
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719c9f2126eb563c0800000000000000
+      internalID: -4366874935231395561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_20
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 136
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea10afe678ee0d840800000000000000
+      internalID: 5246955831336501678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_21
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 136
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300d4b2e226f79760800000000000000
+      internalID: 7464705537082707971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_22
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 136
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7c48eaba66ac9b0800000000000000
+      internalID: -5059118343843952648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 136
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df0b23aee4150b60800000000000000
+      internalID: 7711592952114122710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 72
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a11badeb3a6ce9b0800000000000000
+      internalID: -5049544276566142551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_25
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 72
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4bbe568a5cf6fb0800000000000000
+      internalID: -4652282562995309340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 72
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a526d8bbd9a9c90800000000000000
+      internalID: -7162238828522874216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_27
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 72
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed7b0c54d05cfdc0800000000000000
+      internalID: -3603916728795693595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_28
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 72
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85634ce47e5b40ec0800000000000000
+      internalID: -3601553796925999528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_29
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 72
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324888624074f8010800000000000000
+      internalID: 1193250509428392995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 72
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67562faa7e0c74c90800000000000000
+      internalID: -7185562579208346250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_31
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 72
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6066f2ef7fac01590800000000000000
+      internalID: -7705435795960666618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_32
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 72
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fad1047522b2c010800000000000000
+      internalID: 1207723524018526963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_33
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 72
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16781dbc890707550800000000000000
+      internalID: 6156544492172314465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_34
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 72
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c759e173d81870760800000000000000
+      internalID: 7424044954258675068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 72
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd635f3447ccac10800000000000000
+      internalID: 2066245424990350771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 8
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab43b5ad9875bd340800000000000000
+      internalID: 4889598070026351802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 8
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f60dad049e2e6d0800000000000000
+      internalID: -2962549140098093247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_38
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 8
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a04ab82920f4dc0800000000000000
+      internalID: -3652697944342918544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_39
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 8
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb9dbd8d910641f0800000000000000
+      internalID: -1061158885999666206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_40
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 8
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4904190b2e94dda0800000000000000
+      internalID: -5920933702412269237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_41
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 8
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c872eeb85fa762c00800000000000000
+      internalID: 875522372603357068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_42
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 8
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bf35402e2d2dfa0800000000000000
+      internalID: -5777323503785870589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_43
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 8
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1425c65ae7b873c50800000000000000
+      internalID: 6644933151265935937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_44
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 8
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e86e79a1b3b73100800000000000000
+      internalID: 87736293391231208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_45
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 8
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7500a8e9b98a64b0800000000000000
+      internalID: -5446389367786437252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_46
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 8
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11406ba22a1619df0800000000000000
+      internalID: -175251561361570799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skull_swordsman_47
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 8
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323b3e94698a63aa0800000000000000
+      internalID: -6181568075081207005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

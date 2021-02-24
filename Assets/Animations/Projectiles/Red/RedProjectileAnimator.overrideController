@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RedProjectileAnimator
+  m_Controller: {fileID: 9100000, guid: 41adda800e0f0414f8ea1185beafb563, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 213b33d908ff74e4db37c4d49d03bf3f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 704e2de643df6304ca090a2061a7f241, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ef5fbe93cba028e48a122e560d1fe5fd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6345f0acd5c69964987edf31194bc552, type: 2}
