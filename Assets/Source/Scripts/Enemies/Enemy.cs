@@ -6,6 +6,7 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     protected Direction _currentDirection;
+    protected bool _isMovingEnabled;
     private EnemyAnimator _animator;
     private Rigidbody2D _rigidBody;
     private IMotionProvider _motionProvider;
@@ -14,6 +15,12 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected FloatData _baseSpeed;
     protected float _currentSpeed;
+
+    [SerializeField]
+    protected FloatData _baseHealth;
+    
+    public float CurrentHealth { get; protected set; }
+
 
     #region Collision
 
@@ -43,6 +50,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Start()
     {
+        CurrentHealth = _baseHealth;
         _currentSpeed = _baseSpeed;
         _animator = new EnemyAnimator(GetComponent<Animator>());
         _rigidBody = GetComponent<Rigidbody2D>();
@@ -80,6 +88,13 @@ public abstract class Enemy : MonoBehaviour
 
     #endregion
 
+    public void Damage(float damage)
+    {
+        CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
+        if (CurrentHealth == 0)
+            OnKilled();
+    }
+
     private void Animate(Vector2 direction)
     {
         if(!_isAttacking)
@@ -109,6 +124,11 @@ public abstract class Enemy : MonoBehaviour
     protected virtual void StopAttacking()
     {
         _isAttacking = false;
+    }
+
+    protected virtual void OnKilled()
+    {
+        Destroy(gameObject);
     }
 
     private static Direction DirectionFromVector(Vector2 v)

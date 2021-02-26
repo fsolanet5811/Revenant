@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _baseSpeed: {fileID: 11400000, guid: 97c1938940dee9a49b74e5ce1f93be86, type: 2}
+  _baseHealth: {fileID: 11400000, guid: 4b15a6632ce30a9419b51bf0a7759ccc, type: 2}
   _target: {fileID: 0}
   _waypoints: []
   _projectile: {fileID: 7135319766818810064, guid: fb833b8b7142ff442a2c7e96b76a7822, type: 3}

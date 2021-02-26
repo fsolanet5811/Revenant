@@ -15,6 +15,9 @@ public abstract class Projectile : MonoBehaviour
     [SerializeField]
     protected FloatData _speed;
 
+    [SerializeField]
+    protected FloatData _damage;
+
     protected virtual void Start()
     {
         _animator = new ProjectileAnimator(GetComponent<Animator>());
@@ -33,6 +36,11 @@ public abstract class Projectile : MonoBehaviour
         // And so is the spawning object!
         if(!collision.isTrigger && collision.gameObject != SpawningObject)
         {
+            // If the other object is an enemy, we will damage it.
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy)
+                enemy.Damage(_damage);
+
             Explode();
         }
     }

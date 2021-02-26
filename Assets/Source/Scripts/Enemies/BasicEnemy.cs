@@ -43,8 +43,11 @@ public abstract class BasicEnemy : Enemy
     protected override void StopAttacking()
     {
         base.StopAttacking();
-        StopCoroutine(_attackCoroutine);
-        _attackCoroutine = null;
+        if(_attackCoroutine != null)
+        {
+            StopCoroutine(_attackCoroutine);
+            _attackCoroutine = null;
+        }
     }
 
     private void Attack(PlayerController player)

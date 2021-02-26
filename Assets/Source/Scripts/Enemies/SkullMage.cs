@@ -26,6 +26,18 @@ public class SkullMage : BasicEnemy
         StopAttacking();
     }
 
+    protected override void StartAttacking(PlayerController player)
+    {
+        _currentSpeed = 0;
+        base.StartAttacking(player);
+    }
+
+    protected override void StopAttacking()
+    {
+        _currentSpeed = _baseSpeed;
+        base.StopAttacking();
+    }
+
     protected override IEnumerator AttackCoroutine(PlayerController player)
     {
         while(true)
