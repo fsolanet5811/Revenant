@@ -9,6 +9,7 @@ public abstract class BasicEnemy : Enemy
     protected FollowerMotionProvider _alertMotionProvider;
     protected WaypointMotionProvider _unalertMotionProvider;
     protected AlertZone _alertZone;
+    private Coroutine _attackCoroutine;
 
     [SerializeField]
     private Transform _target;
@@ -30,6 +31,30 @@ public abstract class BasicEnemy : Enemy
         _alertZone.AlertTarget = _target;
         base.Start();
     }
+
+    #region Attack
+
+    protected override void StartAttacking(PlayerController player)
+    {
+        base.StartAttacking(player);
+        Attack(player);
+    }
+
+    protected override void StopAttacking()
+    {
+        base.StopAttacking();
+        StopCoroutine(_attackCoroutine);
+        _attackCoroutine = null;
+    }
+
+    private void Attack(PlayerController player)
+    {
+        _attackCoroutine ??= StartCoroutine(AttackCoroutine(player));
+    }
+
+    protected abstract IEnumerator AttackCoroutine(PlayerController player);
+
+    #endregion
 
     protected override IMotionProvider GetMotionProvider()
     {

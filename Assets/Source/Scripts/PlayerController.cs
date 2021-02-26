@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update :p
 
-    [SerializeField] private FieldOfView fieldOfView;
+    [SerializeField] private Field_of_View fieldOfView;
     [SerializeField] float baseSpeed = 3.0f;
     [SerializeField] float currentSpeed; //may or may not have speed potions, delete baseSpeed and assign value to currentSpeed if not.
 

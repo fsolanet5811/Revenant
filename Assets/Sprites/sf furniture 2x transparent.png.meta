@@ -1,55 +1,49 @@
 fileFormatVersion: 2
-guid: 6daf67c30dc77ac48811adfcf95597b2
+guid: aeb1890ec8888b4479fc86f3784debd2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -236619611796383025
-    second: scientist_0
+      213: 5707617248742664329
+    second: sf furniture 2x transparent_0
   - first:
-      213: 1648050328079253374
-    second: scientist_1
+      213: 7801368172084173803
+    second: sf furniture 2x transparent_1
   - first:
-      213: 5843917373465877143
-    second: scientist_2
+      213: 5449967587662134822
+    second: sf furniture 2x transparent_2
   - first:
-      213: -2452797923397068180
-    second: scientist_3
+      213: -2145018711364197457
+    second: sf furniture 2x transparent_3
   - first:
-      213: 884762670773697752
-    second: scientist_4
+      213: 622518011608952252
+    second: sf furniture 2x transparent_4
   - first:
-      213: 3812723210715605895
-    second: scientist_5
+      213: -1659681016267201025
+    second: sf furniture 2x transparent_5
   - first:
-      213: 4742007332142120624
-    second: scientist_6
+      213: -7707696877318745300
+    second: sf furniture 2x transparent_6
   - first:
-      213: -2244577035131318505
-    second: scientist_7
+      213: 1694660894912716952
+    second: sf furniture 2x transparent_7
   - first:
-      213: 1192327656847085527
-    second: scientist_8
+      213: -107524976016546169
+    second: sf furniture 2x transparent_8
   - first:
-      213: -6244179480278470617
-    second: scientist_9
+      213: -8072241947418797973
+    second: sf furniture 2x transparent_9
   - first:
-      213: 4361552996380519270
-    second: scientist_10
+      213: 5863302317646540061
+    second: sf furniture 2x transparent_10
   - first:
-      213: 6018963712238543535
-    second: scientist_11
+      213: -987592614932211419
+    second: sf furniture 2x transparent_11
   - first:
-      213: -8303806153358064523
-    second: scientist_12
+      213: 8555916395985202604
+    second: sf furniture 2x transparent_12
   - first:
-      213: 6312834968134340603
-    second: scientist_13
-  - first:
-      213: -8624479685710804178
-    second: scientist_14
-  - first:
-      213: 5290080785095144979
-    second: scientist_15
+      213: -8430658297915434333
+    second: sf furniture 2x transparent_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -80,7 +74,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -116,7 +110,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,7 +122,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,337 +133,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: scientist_0
+      name: sf furniture 2x transparent_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 156
-        width: 34
-        height: 52
+        x: 2
+        y: 98
+        width: 60
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fca5cfb77bb57bcf0800000000000000
-      internalID: -236619611796383025
+      spriteID: 988e231c5a7853f40800000000000000
+      internalID: 5707617248742664329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_1
+      name: sf furniture 2x transparent_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 156
-        width: 34
-        height: 52
+        x: 66
+        y: 98
+        width: 28
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7f3129aa0d0fd610800000000000000
-      internalID: 1648050328079253374
+      spriteID: beb9d13e407044c60800000000000000
+      internalID: 7801368172084173803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_2
+      name: sf furniture 2x transparent_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 98
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e7ef355ac22ab40800000000000000
+      internalID: 5449967587662134822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sf furniture 2x transparent_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 60
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa32298c8dc5b32e0800000000000000
+      internalID: -2145018711364197457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sf furniture 2x transparent_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 68
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdeb3455d0a3a800800000000000000
+      internalID: 622518011608952252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sf furniture 2x transparent_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 68
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff52fe8b8e0a7f8e0800000000000000
+      internalID: -1659681016267201025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sf furniture 2x transparent_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c235707f682c80590800000000000000
+      internalID: -7707696877318745300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sf furniture 2x transparent_7
       rect:
         serializedVersion: 2
         x: 68
-        y: 156
-        width: 34
-        height: 52
+        y: 4
+        width: 56
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ada2683e3c91150800000000000000
-      internalID: 5843917373465877143
+      spriteID: 890a400fa15a48710800000000000000
+      internalID: 1694660894912716952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_3
+      name: sf furniture 2x transparent_8
       rect:
         serializedVersion: 2
-        x: 102
-        y: 156
-        width: 34
-        height: 52
+        x: 131
+        y: 67
+        width: 26
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a1a1eb849e5fdd0800000000000000
-      internalID: -2452797923397068180
+      spriteID: 7862d00aa9ef18ef0800000000000000
+      internalID: -107524976016546169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_4
+      name: sf furniture 2x transparent_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 104
-        width: 34
-        height: 52
+        x: 160
+        y: 96
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcfdfd16fe474c00800000000000000
-      internalID: 884762670773697752
+      spriteID: b685817a7b2a9ff80800000000000000
+      internalID: -8072241947418797973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_5
+      name: sf furniture 2x transparent_10
       rect:
         serializedVersion: 2
-        x: 34
-        y: 104
-        width: 34
-        height: 52
+        x: 160
+        y: 68
+        width: 30
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b27993f8389e430800000000000000
-      internalID: 3812723210715605895
+      spriteID: d1deb0e8462ae5150800000000000000
+      internalID: 5863302317646540061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_6
+      name: sf furniture 2x transparent_11
       rect:
         serializedVersion: 2
-        x: 68
-        y: 104
-        width: 34
-        height: 52
+        x: 194
+        y: 66
+        width: 28
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bef0aa5b8efec140800000000000000
-      internalID: 4742007332142120624
+      spriteID: 5299a2ccfbd5b42f0800000000000000
+      internalID: -987592614932211419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_7
+      name: sf furniture 2x transparent_12
       rect:
         serializedVersion: 2
-        x: 102
-        y: 104
-        width: 34
-        height: 52
+        x: 224
+        y: 98
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f8ffd2419a9d0e0800000000000000
-      internalID: -2244577035131318505
+      spriteID: cad63a681a8bcb670800000000000000
+      internalID: 8555916395985202604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scientist_8
+      name: sf furniture 2x transparent_13
       rect:
         serializedVersion: 2
-        x: 0
-        y: 52
-        width: 34
-        height: 52
+        x: 226
+        y: 66
+        width: 28
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7df8e3acfaffb8010800000000000000
-      internalID: 1192327656847085527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_9
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 52
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 720f73488d73859a0800000000000000
-      internalID: -6244179480278470617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_10
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 52
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66b2d4a7759578c30800000000000000
-      internalID: 4361552996380519270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_11
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 52
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa2e1ff3b97a78350800000000000000
-      internalID: 6018963712238543535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 574c3698c44f2cc80800000000000000
-      internalID: -8303806153358064523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_13
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bffcf49e4f1bb9750800000000000000
-      internalID: 6312834968134340603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_14
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 0
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2b82a89b61bf4880800000000000000
-      internalID: -8624479685710804178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: scientist_15
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 34
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31637bc22742a6940800000000000000
-      internalID: 5290080785095144979
+      spriteID: 3aa1d0212f8400b80800000000000000
+      internalID: -8430658297915434333
       vertices: []
       indices: 
       edges: []

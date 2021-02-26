@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
 public abstract class Enemy : MonoBehaviour
 {
+    protected Direction _currentDirection;
     private EnemyAnimator _animator;
     private Rigidbody2D _rigidBody;
     private IMotionProvider _motionProvider;
@@ -89,7 +90,8 @@ public abstract class Enemy : MonoBehaviour
             }
             else
             {
-                _animator.AnimateMove(direction);
+                _currentDirection = DirectionFromVector(direction);
+                _animator.AnimateMove(_currentDirection);
             }
         }
     }
@@ -98,11 +100,26 @@ public abstract class Enemy : MonoBehaviour
     {
         _isAttacking = true;
         _animator.AnimateAttack();
-        _animator.AnimateDirection(player.transform.position - transform.position);
+
+        // Attacking will also change our direction.
+        _currentDirection = DirectionFromVector(player.transform.position - transform.position);
+        _animator.AnimateDirection(_currentDirection);
     }
 
     protected virtual void StopAttacking()
     {
         _isAttacking = false;
+    }
+
+    private static Direction DirectionFromVector(Vector2 v)
+    {
+        // Grab the stronger of the two axes. 
+        float absX = Mathf.Abs(v.x);
+        float absY = Mathf.Abs(v.y);
+
+        if (absX > absY)
+            return v.x < 0 ? Direction.Left : Direction.Right;
+
+        return v.y < 0 ? Direction.Down : Direction.Up;
     }
 }

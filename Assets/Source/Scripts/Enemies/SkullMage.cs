@@ -9,7 +9,6 @@ public class SkullMage : BasicEnemy
     [SerializeField]
     private GameObject _projectile;
     private ProjectileInstantiator _projectileInstantiator;
-    private Coroutine _attackCoroutine;
 
     protected override void Start()
     {
@@ -27,25 +26,7 @@ public class SkullMage : BasicEnemy
         StopAttacking();
     }
 
-    protected override void StartAttacking(PlayerController player)
-    {
-        base.StartAttacking(player);
-        Attack(player);
-    }
-
-    protected override void StopAttacking()
-    {
-        base.StopAttacking();
-        StopCoroutine(_attackCoroutine);
-        _attackCoroutine = null;
-    }
-
-    private void Attack(PlayerController player)
-    {
-        _attackCoroutine ??= StartCoroutine(AttackCoroutine(player));
-    }
-
-    private IEnumerator AttackCoroutine(PlayerController player)
+    protected override IEnumerator AttackCoroutine(PlayerController player)
     {
         while(true)
         {

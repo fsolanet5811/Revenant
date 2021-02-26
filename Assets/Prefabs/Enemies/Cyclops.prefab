@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 9184367054949918833}
   - component: {fileID: 5989135878739793606}
   - component: {fileID: 4817605545749775784}
+  - component: {fileID: -4029445090407815340}
   m_Layer: 0
   m_Name: Cyclops
   m_TagString: Untagged
@@ -232,6 +233,7 @@ MonoBehaviour:
   _baseSpeed: {fileID: 11400000, guid: cc8ebd268d1029a449cfabe9e53dd599, type: 2}
   _target: {fileID: 0}
   _waypoints: []
+  _damage: {fileID: 11400000, guid: a71ef8bc519850c40897151c9c1d9ba8, type: 2}
 --- !u!114 &9184367054949918833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +312,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &-4029445090407815340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829658412448719430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87299a4f8f65b0648a3bfc8abf9350ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitBoxDistance: 1
 --- !u!1001 &3764382122087642330
 PrefabInstance:
   m_ObjectHideFlags: 0

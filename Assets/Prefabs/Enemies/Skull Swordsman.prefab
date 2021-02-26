@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 3576849022178021688}
   - component: {fileID: 5386349400141774020}
   - component: {fileID: 7651980182031421696}
+  - component: {fileID: 7540215274411717664}
   m_Layer: 0
   m_Name: Skull Swordsman
   m_TagString: Untagged
@@ -205,6 +206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseSpeed: {fileID: 11400000, guid: 56261d5bbb423de4a8a25c3cfc1cc879, type: 2}
   _target: {fileID: 0}
+  _waypoints: []
+  _damage: {fileID: 11400000, guid: e8c34c1b92fa3624f8db5edb0c7381ae, type: 2}
 --- !u!61 &829658412448719452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -309,6 +312,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &7540215274411717664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829658412448719430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87299a4f8f65b0648a3bfc8abf9350ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitBoxDistance: 1
 --- !u!1001 &155308376720314299
 PrefabInstance:
   m_ObjectHideFlags: 0

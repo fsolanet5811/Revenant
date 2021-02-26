@@ -47,21 +47,21 @@ public class EnemyAnimator
         _animator = enemyAnimator;
     }
 
-    public void AnimateMove(Vector2 direction)
+    public void AnimateMove(Direction direction)
     {
         IsMoving = true;
         AnimateDirection(direction);
     }
 
-    public void AnimateIdle(Vector2 direction)
+    public void AnimateIdle(Direction direction)
     {
         AnimateIdle();
         AnimateDirection(direction);
     }
 
-    public void AnimateDirection(Vector2 direction)
+    public void AnimateDirection(Direction direction)
     {
-        Direction = DirectionFromVector(direction);
+        Direction = direction;
     }
 
     public void AnimateAttack()
@@ -72,17 +72,5 @@ public class EnemyAnimator
     public void AnimateIdle()
     {
         IsMoving = false;
-    }
-
-    private static Direction DirectionFromVector(Vector2 v)
-    {
-        // Grab the stronger of the two axes. 
-        float absX = Mathf.Abs(v.x);
-        float absY = Mathf.Abs(v.y);
-
-        if (absX > absY)
-            return v.x < 0 ? Direction.Left : Direction.Right;
-
-        return v.y < 0 ? Direction.Down : Direction.Up;
     }
 }
