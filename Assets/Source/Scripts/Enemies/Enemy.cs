@@ -55,6 +55,7 @@ public abstract class Enemy : MonoBehaviour
         _animator = new EnemyAnimator(GetComponent<Animator>());
         _rigidBody = GetComponent<Rigidbody2D>();
         _motionProvider = GetMotionProvider();
+        EnemiesManager.Instance.AddSpawnedEnemy(this);
     }
 
     private void FixedUpdate()
@@ -128,7 +129,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void OnKilled()
     {
-        Destroy(gameObject);
+        EnemiesManager.Instance.DespawnEnemy(this);
     }
 
     private static Direction DirectionFromVector(Vector2 v)

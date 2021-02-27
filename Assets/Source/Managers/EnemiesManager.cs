@@ -7,19 +7,11 @@ public class EnemiesManager
 {
     #region Singleton
 
-    private static readonly EnemiesManager _instance;
-
-    public static EnemiesManager Instance
-    {
-        get
-        {
-            return Instance;
-        }
-    }
+    public static EnemiesManager Instance { get; }
 
     static EnemiesManager()
     {
-        _instance = new EnemiesManager();
+        Instance = new EnemiesManager();
     }
 
     private EnemiesManager() 
@@ -32,16 +24,15 @@ public class EnemiesManager
     private readonly List<Enemy> _enemies;
 
     /// <summary>
-    /// Brings the enemy manager to an initial state.
-    /// Should be called once at the start of the game.
+    /// Adds an enemy to the list of enemies that are spawned into the game.
+    /// This should be called in the startup of every enemy.
     /// </summary>
-    /// <param name="enemies">
-    /// The enemies that are staticly placed/spawned at the start of the game.
+    /// <param name="enemy">
+    /// The enemy that was spawned
     /// </param>
-    public void Initialize(IEnumerable<Enemy> enemies)
+    public void AddSpawnedEnemy(Enemy enemy)
     {
-        _enemies.Clear();
-        _enemies.AddRange(enemies);
+        _enemies.Add(enemy);
     }
 
     /// <summary>
@@ -64,7 +55,7 @@ public class EnemiesManager
     /// </param>
     public void DespawnEnemy(Enemy enemy)
     {
-        Object.Destroy(enemy);
+        Object.Destroy(enemy.gameObject);
         _enemies.Remove(enemy);
     }
 }
