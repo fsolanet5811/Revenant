@@ -5,12 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
 public abstract class Enemy : MonoBehaviour
 {
-    protected Direction _currentDirection;
+    
     protected bool _isMovingEnabled;
+    protected AttackZone _attackZone;
     private EnemyAnimator _animator;
     private Rigidbody2D _rigidBody;
     private IMotionProvider _motionProvider;
     private bool _isAttacking;
+    private Direction _currentDirection;
 
     [SerializeField]
     protected FloatData _baseSpeed;
@@ -18,7 +20,23 @@ public abstract class Enemy : MonoBehaviour
 
     [SerializeField]
     protected FloatData _baseHealth;
-    
+
+    [SerializeField]
+    private Vector2Data _attackZoneDimensions;
+
+    protected Direction CurrentDirection
+    {
+        get
+        {
+            return _currentDirection;
+        }
+        private set
+        {
+            _currentDirection = value;
+            _attackZone.CurrentDirection = value;
+        }
+    }
+
     public float CurrentHealth { get; protected set; }
 
 
@@ -48,17 +66,23 @@ public abstract class Enemy : MonoBehaviour
 
     #region Unity
 
+    protected virtual void Awake()
+    {
+        _animator = new EnemyAnimator(GetComponent<Animator>());
+        _attackZone = GetComponentInChildren<AttackZone>();
+        _rigidBody = GetComponent<Rigidbody2D>();
+    }
+
     protected virtual void Start()
     {
         CurrentHealth = _baseHealth;
         _currentSpeed = _baseSpeed;
-        _animator = new EnemyAnimator(GetComponent<Animator>());
-        _rigidBody = GetComponent<Rigidbody2D>();
         _motionProvider = GetMotionProvider();
+        _attackZone.SetDimensions(_attackZoneDimensions);
         EnemiesManager.Instance.AddSpawnedEnemy(this);
     }
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         Vector2 moveDireciton = Move();
         Animate(moveDireciton);
@@ -106,8 +130,8 @@ public abstract class Enemy : MonoBehaviour
             }
             else
             {
-                _currentDirection = DirectionFromVector(direction);
-                _animator.AnimateMove(_currentDirection);
+                CurrentDirection = DirectionUtilities.DirectionFromVector(direction);
+                _animator.AnimateMove(CurrentDirection);
             }
         }
     }
@@ -118,8 +142,8 @@ public abstract class Enemy : MonoBehaviour
         _animator.AnimateAttack();
 
         // Attacking will also change our direction.
-        _currentDirection = DirectionFromVector(player.transform.position - transform.position);
-        _animator.AnimateDirection(_currentDirection);
+        CurrentDirection = DirectionUtilities.DirectionFromVector(player.transform.position - transform.position);
+        _animator.AnimateDirection(CurrentDirection);
     }
 
     protected virtual void StopAttacking()
@@ -130,17 +154,5 @@ public abstract class Enemy : MonoBehaviour
     protected virtual void OnKilled()
     {
         EnemiesManager.Instance.DespawnEnemy(this);
-    }
-
-    private static Direction DirectionFromVector(Vector2 v)
-    {
-        // Grab the stronger of the two axes. 
-        float absX = Mathf.Abs(v.x);
-        float absY = Mathf.Abs(v.y);
-
-        if (absX > absY)
-            return v.x < 0 ? Direction.Left : Direction.Right;
-
-        return v.y < 0 ? Direction.Down : Direction.Up;
     }
 }

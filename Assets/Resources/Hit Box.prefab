@@ -48,10 +48,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.48}
+    newSize: {x: 0.48, y: 0.48}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -67,6 +67,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3734940923094329718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1c4f266eb1a72a49b347f93ccdc3e78, type: 3}
+  m_Script: {fileID: 11500000, guid: 618bc22c57400774f8a7d1487ec50806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

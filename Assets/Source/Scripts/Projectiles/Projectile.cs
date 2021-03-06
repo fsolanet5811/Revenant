@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D), typeof(Animator), typeof(Rigidbody2D))]
-public abstract class Projectile : MonoBehaviour
+[RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
+public abstract class Projectile : HitBox
 {
     private ProjectileAnimator _animator;
     private Rigidbody2D _rigidBody;
@@ -30,19 +30,14 @@ public abstract class Projectile : MonoBehaviour
         Move();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         // Trigger colliders are safe!
         // And so is the spawning object!
         if(!collision.isTrigger && collision.gameObject != SpawningObject)
-        {
-            // If the other object is an enemy, we will damage it.
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            if (enemy)
-                enemy.Damage(_damage);
-
             Explode();
-        }
+
+        base.OnTriggerEnter2D(collision);
     }
 
     private void Move()

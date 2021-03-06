@@ -4,16 +4,34 @@ using UnityEngine;
 
 public class AlertZone : MonoBehaviour
 {
-    private Collider2D _alertTrigger;
+    private PolygonCollider2D _alertTrigger;
     private Collider2D _alertRelease;
+    private Direction _currentDirection;
 
     public bool IsAlerted { get; private set; }
 
     public Transform AlertTarget { get; set; }
 
-    void Start()
+    public Direction CurrentDirection
     {
-        _alertTrigger = transform.GetChild(0).GetComponent<Collider2D>();
+        get
+        {
+            return _currentDirection;
+        }
+        set
+        {
+            // No need to perform the calculation again if we haven't changed.
+            if(_currentDirection != value)
+            {
+                _currentDirection = value;
+                DirectionUtilities.RotateTransformTowardsDirection(_alertTrigger.transform, value);
+            }
+        }
+    }
+
+    private void Awake()
+    {
+        _alertTrigger = transform.GetChild(0).GetComponent<PolygonCollider2D>();
         _alertRelease = transform.GetChild(1).GetComponent<Collider2D>();
     }
 
@@ -21,6 +39,26 @@ public class AlertZone : MonoBehaviour
     {
         if (AlertTarget != null)
             CheckAlert();
+    }
+
+    public void ForceAlert()
+    {
+        IsAlerted = true;
+    }
+
+    public void SetTriggerDimensions(Vector2 dimensions)
+    {
+        SetTriggerDimensions(dimensions.x, dimensions.y);
+    }
+
+    public void SetTriggerDimensions(float width, float height)
+    {
+        _alertTrigger.points = new Vector2[]
+        {
+            Vector2.zero,
+            new Vector2(height , width / 2),
+            new Vector2(height, -width / 2)
+        };
     }
 
     private void CheckAlert()

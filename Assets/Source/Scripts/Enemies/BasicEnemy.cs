@@ -12,6 +12,9 @@ public abstract class BasicEnemy : Enemy
     private Coroutine _attackCoroutine;
 
     [SerializeField]
+    private Vector2Data _alertTriggerDimensions;
+
+    [SerializeField]
     private Transform _target;
 
     [SerializeField]
@@ -25,18 +28,45 @@ public abstract class BasicEnemy : Enemy
         }
     }
 
+    protected override void Awake()
+    {
+        base.Awake();
+        _alertZone = GetComponentInChildren<AlertZone>();
+    }
+
     protected override void Start()
     {
-        _alertZone = GetComponentInChildren<AlertZone>();
         _alertZone.AlertTarget = _target;
+        _alertZone.SetTriggerDimensions(_alertTriggerDimensions);
         base.Start();
+    }
+
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+
+        // give the alert zone our current direction.
+        _alertZone.CurrentDirection = CurrentDirection;
     }
 
     #region Attack
 
+    protected override void OnPlayerEnteredAttackZone(PlayerController player)
+    {
+        StartAttacking(player);
+    }
+
+    protected override void OnPlayerExitedAttackZone(PlayerController player)
+    {
+        StopAttacking();
+    }
+
     protected override void StartAttacking(PlayerController player)
     {
         base.StartAttacking(player);
+
+        // Whenever we start attacking, we ensure that the enemy is in the alert state.
+        _alertZone.ForceAlert();
         Attack(player);
     }
 

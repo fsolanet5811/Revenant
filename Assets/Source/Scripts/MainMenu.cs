@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -16,8 +17,18 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void ExitGame()
+    public void NewGame()
+    {
+      SceneManager.LoadScene("Better Level Test");
+    }
+
+    public void Quit()
     {
       Application.Quit();
+    }
+
+    public void ToMainMenu()
+    {
+      SceneManager.LoadScene("Main_Menu");
    }
 }

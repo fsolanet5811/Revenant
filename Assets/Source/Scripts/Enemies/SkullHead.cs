@@ -11,20 +11,10 @@ public class SkullHead : BasicEnemy
     [SerializeField]
     private GameObject _projectile;
 
-    protected override void Start()
+    protected override void Awake()
     {
-        base.Start();
+        base.Awake();
         _projectileInstantiator = GetComponent<ProjectileInstantiator>();
-    }
-
-    protected override void OnPlayerEnteredAttackZone(PlayerController player)
-    {
-        StartAttacking(player);
-    }
-
-    protected override void OnPlayerExitedAttackZone(PlayerController player)
-    {
-        StopAttacking();
     }
 
     protected override void StartAttacking(PlayerController player)

@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public enum Direction
+{
+    Right = 0,
+    Up = 1,
+    Left = 2,
+    Down = 3
+}
+
+public static class DirectionUtilities
+{
+    public static Direction DirectionFromVector(Vector2 v)
+    {
+        // Grab the stronger of the two axes. 
+        float absX = Mathf.Abs(v.x);
+        float absY = Mathf.Abs(v.y);
+
+        if (absX > absY)
+            return v.x < 0 ? Direction.Left : Direction.Right;
+
+        return v.y < 0 ? Direction.Down : Direction.Up;
+    }
+}

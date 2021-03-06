@@ -10,8 +10,10 @@ public class Field_of_View : MonoBehaviour
     [SerializeField] private Vector3 origin;
     private float startingAngle = 0f;
     [SerializeField] private float fov;
-    private float startingFov = 45f;
+    private float startingFov = 30f;
     [SerializeField] private float viewDistance;
+    private float lastDirection;
+    private bool far = false;
 
     void Start()
     {
@@ -19,18 +21,17 @@ public class Field_of_View : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         origin = this.transform.position;
         fov = startingFov;
-        viewDistance = 5f;
+        viewDistance = 4f;
 
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-
+        if (Input.GetMouseButtonDown(1)) setFovType();
         int rayCount = 50;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
-        viewDistance = 5f;
         Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
         int[] triangles = new int[rayCount * 3];
@@ -81,35 +82,51 @@ public class Field_of_View : MonoBehaviour
         float angleRad = angle * (Mathf.PI / 180f);
         return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
     }
-    public static float GetAngleFromPlayer(PlayerController dir, int fov)
+    public static float GetAngleFromPlayer(Vector3 dir, int fov)
     {
-        float lastDirection = 0f;
-        float x = Mathf.Acos(dir.lookHorizontal) * Mathf.Rad2Deg + fov;
-        float y = Mathf.Asin(dir.lookVertical) * Mathf.Rad2Deg + fov;
-        if (Mathf.Abs(dir.lookHorizontal) > 0)
+        float x = Mathf.Acos(dir.x) * Mathf.Rad2Deg + fov;
+        float y = Mathf.Asin(dir.y) * Mathf.Rad2Deg + fov;
+        float z = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + fov;
+
+        //Debug.Log("Angle = " + z + "," + dir.x + "," + dir.y);
+        if (Mathf.Abs(dir.x) > 0 && Mathf.Abs(dir.y) > 0)
         {
-            lastDirection = x;
+            return z;
+        }
+        if (Mathf.Abs(dir.x) > 0)
+        {
             return x;
         }
-        else if (Mathf.Abs(dir.lookVertical) > 0)
+        else if (Mathf.Abs(dir.y) > 0)
         {
-            lastDirection = y;
             return y;
         }
-        else
-        {
-            return lastDirection;
-        }
+        return y;
 
     }
 
+    void setFovType()
+    {
+        if (far)
+        {
+            fov =30;
+            viewDistance = 4;
+            far = false;
+        }
+        else
+        {
+            fov = 160;
+            viewDistance = 1f;
+            far = true;
+        }
+    }
 
     public void SetOrigin(Vector3 origin)
     {
         this.origin = origin;
     }
 
-    public void SetAimDirection(PlayerController aimDirection)
+    public void SetAimDirection(Vector3 aimDirection)
     {
         startingAngle = GetAngleFromPlayer(aimDirection, (int)fov) - fov / 2f;
     }

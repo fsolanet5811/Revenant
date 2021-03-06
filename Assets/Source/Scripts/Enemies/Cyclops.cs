@@ -11,20 +11,10 @@ public class Cyclops : BasicEnemy
     [SerializeField]
     private FloatData _damage;
 
-    protected override void Start()
+    protected override void Awake()
     {
         _hitBoxInstantiator = GetComponent<HitBoxInstantiator>();
-        base.Start();
-    }
-
-    protected override void OnPlayerEnteredAttackZone(PlayerController player)
-    {
-        StartAttacking(player);
-    }
-
-    protected override void OnPlayerExitedAttackZone(PlayerController player)
-    {
-        StopAttacking();
+        base.Awake();
     }
 
     protected override IEnumerator AttackCoroutine(PlayerController player)
@@ -32,7 +22,7 @@ public class Cyclops : BasicEnemy
         while (true)
         {
             yield return new WaitForSeconds(0.3f);
-            _hitBoxInstantiator.Instantiate(_damage, 2, _currentDirection);
+            _hitBoxInstantiator.Instantiate(_damage, 2, CurrentDirection);
             yield return new WaitForSeconds(0.15f);
         }
     }

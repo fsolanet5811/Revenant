@@ -563,24 +563,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 813144a053c53da4fa69fbfbe97521a7, type: 3}
---- !u!1 &1460332983 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 829658412448719430, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-  m_PrefabInstance: {fileID: 829658413183874216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1460332984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460332983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87299a4f8f65b0648a3bfc8abf9350ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HitBoxDistance: 1
 --- !u!1 &1528426197
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87299a4f8f65b0648a3bfc8abf9350ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitBoxDistance: 1
+  HitBoxDistance: {fileID: 0}
 --- !u!1 &1935142955
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,42 +803,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8932098917793592443, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: enableRotation
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 829658412448719430, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
       propertyPath: m_Name
       value: Skull Swordsman
       objectReference: {fileID: 0}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _target
-      value: 
-      objectReference: {fileID: 160222041}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _baseSpeed
-      value: 
-      objectReference: {fileID: 11400000, guid: 56261d5bbb423de4a8a25c3cfc1cc879, type: 2}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _waypoints.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _waypoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 2039295111}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _waypoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 792963464}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _waypoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 114040735}
-    - target: {fileID: 829658412448719431, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
-      propertyPath: _waypoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 341989586}
     - target: {fileID: 829658412448719451, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -900,6 +850,10 @@ PrefabInstance:
     - target: {fileID: 829658412448719451, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540215274411717664, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
+      propertyPath: HitBoxDistance
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcced84f066b1a48be6ee030e0223b8, type: 3}
@@ -974,6 +928,10 @@ PrefabInstance:
     - target: {fileID: 9091214728970442579, guid: ce0d44a7710374541b577a7433c30493, type: 3}
       propertyPath: m_Name
       value: Skull Head
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091214728970442582, guid: ce0d44a7710374541b577a7433c30493, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9091214728970442584, guid: ce0d44a7710374541b577a7433c30493, type: 3}
       propertyPath: m_RootOrder

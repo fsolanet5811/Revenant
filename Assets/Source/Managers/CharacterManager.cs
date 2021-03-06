@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,14 +6,15 @@ public class CharacterManager : MonoBehaviour
 {
    public static CharacterManager characterInstance;
 
-   public int health = 5;
-   public int speed = 1;
-   public bool isAlive = true;
-   public GameObject itemBuff = null;
-   public GameObject characterWeapon = null;
+   public static int health;
+   public bool speed;
+   public static bool hasWeapon = false;
+   public static GameObject weapon = null;
 
    void Awake()
    {
+      health = 4;
+      speed = false;
       CreateManager();
    }
 
@@ -24,24 +25,51 @@ public class CharacterManager : MonoBehaviour
 
    private void UseItem()
    {
-      GameObject buff = GetClosest();
-      if (Vector3.Distance(GameObject.Find("box").transform.position, buff.transform.position) < 2)
+      if (Input.GetKeyDown(KeyCode.E) && !UIManager.isGamePaused)
       {
-         if (Input.GetKeyDown(KeyCode.W) && !UIManager.isGamePaused)
+         GameObject buff = GetClosest();
+         if (buff == null)
+         return;
+         if (Vector3.Distance(GameObject.Find("JoshuaSpatial").transform.position, buff.transform.position) < 2)
          {
-            health++;
-            buff.SetActive(false);
-            Debug.Log(health);
+            // health pack
+            if (buff.name == "health" && health < 6)
+            {
+               health++;
+               buff.SetActive(false);
+            }
+            // temporary speed boost
+            else if (buff.name == "speed" && !speed)
+            {
+               buff.SetActive(false);
+               speed = true;
+               StartCoroutine(BuffTime());
+            }
+            // get weapon
+            else if (buff.name == "knife" && !hasWeapon)
+            {
+               hasWeapon = true;
+               weapon = buff;
+               weapon.SetActive(false);
+            }
          }
       }
+   }
+
+   IEnumerator BuffTime()
+   {
+      yield return new WaitForSeconds(20);
+      speed = false;
    }
 
    private GameObject GetClosest()
    {
       GameObject [] buffs = GameObject.FindGameObjectsWithTag("buff");
+      if (buffs.Length == 0)
+         return null;
       GameObject nearest = null;
       float min = Mathf.Infinity;
-      Vector3 currentPos = GameObject.Find("box").transform.position;
+      Vector3 currentPos = GameObject.Find("JoshuaSpatial").transform.position;
       foreach (GameObject g in buffs)
       {
          float distance = Vector3.Distance(g.transform.position, currentPos);
@@ -64,4 +92,4 @@ public class CharacterManager : MonoBehaviour
          DontDestroyOnLoad(gameObject);
       }
    }
-}
+}*/
