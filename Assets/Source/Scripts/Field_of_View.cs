@@ -10,7 +10,7 @@ public class Field_of_View : MonoBehaviour
     [SerializeField] private Vector3 origin;
     private float startingAngle = 0f;
     [SerializeField] private float fov;
-    private float startingFov = 30f;
+    private float startingFov = 35f;
     [SerializeField] private float viewDistance;
     private float lastDirection;
     private bool far = false;
@@ -88,7 +88,7 @@ public class Field_of_View : MonoBehaviour
         float y = Mathf.Asin(dir.y) * Mathf.Rad2Deg + fov;
         float z = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + fov;
 
-        //Debug.Log("Angle = " + z + "," + dir.x + "," + dir.y);
+        Debug.Log("Angle = " + z + "," + dir.x + "," + dir.y);
         if (Mathf.Abs(dir.x) > 0 && Mathf.Abs(dir.y) > 0)
         {
             return z;
@@ -109,8 +109,8 @@ public class Field_of_View : MonoBehaviour
     {
         if (far)
         {
-            fov =30;
-            viewDistance = 4;
+            fov =35;
+            viewDistance = 5;
             far = false;
         }
         else

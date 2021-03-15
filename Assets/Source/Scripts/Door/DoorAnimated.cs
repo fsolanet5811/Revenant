@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorAnimated : MonoBehaviour
 {
     private Animator animator;
+    [SerializeField] bool locked;
 
     private void Awake()
     {
@@ -19,5 +20,22 @@ public class DoorAnimated : MonoBehaviour
     public void CloseDoor()
     {
         animator.SetBool("Open", false);
+    }
+
+    public bool isLocked()
+    {
+        if (locked == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void unlockDoor()
+    {
+        locked = false;
     }
 }

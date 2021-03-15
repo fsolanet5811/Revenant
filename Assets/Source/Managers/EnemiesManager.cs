@@ -17,11 +17,13 @@ public class EnemiesManager
     private EnemiesManager() 
     {
         _enemies = new List<Enemy>();
+        _assasinatableEnemies = new List<BasicEnemy>();
     }
 
     #endregion
 
     private readonly List<Enemy> _enemies;
+    private readonly List<BasicEnemy> _assasinatableEnemies;
 
     /// <summary>
     /// Adds an enemy to the list of enemies that are spawned into the game.
@@ -55,7 +57,54 @@ public class EnemiesManager
     /// </param>
     public void DespawnEnemy(Enemy enemy)
     {
+        // You obviously cannot assasinate an enemy if it is despawned.
+        if (enemy is BasicEnemy be)
+            RemoveAssasinatableEnemy(be);
+
         Object.Destroy(enemy.gameObject);
         _enemies.Remove(enemy);
+    }
+
+    /// <summary>
+    /// Adds an enemy to the list of enemies that can be assasinated.
+    /// </summary>
+    /// <param name="enemy">
+    /// The enemy that can be assasinated.
+    /// </param>
+    public void AddAssasinatableEnemy(BasicEnemy enemy)
+    {
+        if (!_assasinatableEnemies.Contains(enemy))
+            _assasinatableEnemies.Add(enemy);
+    }
+
+    /// <summary>
+    /// Removes an enemy from the list of enemies that can be assasinated.
+    /// </summary>
+    /// <param name="enemy">
+    /// The enemy that can no longer be assasinated.
+    /// </param>
+    public void RemoveAssasinatableEnemy(BasicEnemy enemy)
+    {
+        _assasinatableEnemies.Remove(enemy);
+    }
+
+    /// <summary>
+    /// Attempts to get an enemy that can be assasinated.
+    /// </summary>
+    /// <returns>
+    /// An enemy that can be assasinated if one is present.
+    /// Null if no enemies can be assasinated.
+    /// </returns>
+    public BasicEnemy TryGetAssasinatableEnemy()
+    {
+        // Make sure we do not give them an enemy that is alerted.
+        CleanAssasinatableEnemies();
+        return _assasinatableEnemies.FirstOrDefault();
+    }
+
+    private void CleanAssasinatableEnemies()
+    {
+        // Remove all the enemies that are alert.
+        _assasinatableEnemies.RemoveAll(be => be.IsAlerted);
     }
 }

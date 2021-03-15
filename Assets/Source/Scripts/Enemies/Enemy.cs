@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator), typeof(Rigidbody2D), typeof(Collider2D))]
 public abstract class Enemy : MonoBehaviour
 {
-    
+    protected Collider2D _physicalHitBox;
     protected bool _isMovingEnabled;
     protected AttackZone _attackZone;
     private EnemyAnimator _animator;
@@ -71,6 +71,7 @@ public abstract class Enemy : MonoBehaviour
         _animator = new EnemyAnimator(GetComponent<Animator>());
         _attackZone = GetComponentInChildren<AttackZone>();
         _rigidBody = GetComponent<Rigidbody2D>();
+        _physicalHitBox = GetComponent<Collider2D>();
     }
 
     protected virtual void Start()

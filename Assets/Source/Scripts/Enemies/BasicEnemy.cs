@@ -9,6 +9,7 @@ public abstract class BasicEnemy : Enemy
     protected FollowerMotionProvider _alertMotionProvider;
     protected WaypointMotionProvider _unalertMotionProvider;
     protected AlertZone _alertZone;
+    protected AssasinationZone _assasinationZone;
     private Coroutine _attackCoroutine;
 
     [SerializeField]
@@ -32,12 +33,17 @@ public abstract class BasicEnemy : Enemy
     {
         base.Awake();
         _alertZone = GetComponentInChildren<AlertZone>();
+        _assasinationZone = GetComponentInChildren<AssasinationZone>();
     }
 
     protected override void Start()
     {
         _alertZone.AlertTarget = _target;
         _alertZone.SetTriggerDimensions(_alertTriggerDimensions);
+
+        // Center the assaination zone around our physical hitbox.
+        _assasinationZone.Place(_physicalHitBox.offset);
+
         base.Start();
     }
 
@@ -88,6 +94,11 @@ public abstract class BasicEnemy : Enemy
     protected abstract IEnumerator AttackCoroutine(PlayerController player);
 
     #endregion
+
+    public void Assasinate()
+    {
+        Damage(CurrentHealth);
+    }
 
     protected override IMotionProvider GetMotionProvider()
     {

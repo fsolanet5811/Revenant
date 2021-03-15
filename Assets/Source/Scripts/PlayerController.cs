@@ -1,47 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update :p
-
     [SerializeField] private Field_of_View fieldOfView;
     [SerializeField] float baseSpeed = 3.0f;
-    [SerializeField] float currentSpeed; //may or may not have speed potions, delete baseSpeed and assign value to currentSpeed if not.
-
+    //may or may not have speed potions, delete baseSpeed and assign value to currentSpeed if not.
+    [SerializeField] float currentSpeed;
     [SerializeField] public static int playerHealth;
 
     public static bool hasWeapon = false;
     public static GameObject weapon = null;
-    private bool speed;
-
-
-    //this bool tells what the orignal direction the player was moving before the new Update() is called.
-    private bool wasMovingHorizontal = false;
+    private GameObject player;
+    private GameObject useItemText;
+    private GameObject killText;
 
     private Animator animator;
-
     private Rigidbody2D rb;
+    [SerializeField] private AudioClip oo;
+    [SerializeField] private AudioClip stab;
+    private AudioSource damageSound;
+    private AudioSource attackSound;
+    private BasicEnemy enemy;
 
     //making moveDirection a non-local variable allows the code to get its magnitude in Animate()
     private Vector3 moveDirection;
-
     //shows the direction player is facing
     private float lookVertical = -1, lookHorizontal = 0;
+    //tell the fov cone which angle to point in based on player movement
     private Vector3 coneDirection;
-    private Vector3 currentConeDirection;
+
+    //this bool tells what the orignal direction the player was moving before the new Update() is called.
+    //private bool wasMovingHorizontal = false;//part of old code that only allowed 4 direction movement
 
     void Start()
     {
+        damageSound = gameObject.AddComponent<AudioSource>();
+        damageSound.clip = oo;
+        damageSound.Stop();
+        attackSound = gameObject.AddComponent<AudioSource>();
+        attackSound.clip = stab;
+        attackSound.Stop();
         rb = GetComponent<Rigidbody2D>();
-        currentConeDirection = new Vector3(0, -1, 0);
-        fieldOfView.SetAimDirection(currentConeDirection);
+        coneDirection = new Vector3(0, -1, 0);
+        fieldOfView.SetAimDirection(coneDirection);
         playerHealth = 5;
 
         currentSpeed = baseSpeed;
-        speed = false;
+        player = GameObject.Find("JoshuaSpatial");
+        useItemText = GameObject.Find("UseItemText");
+        killText = GameObject.Find("KillText");
+        useItemText.GetComponent<Text>().enabled = false;
+        killText.GetComponent<Text>().enabled = false;
 
         Physics2D.gravity = Vector2.zero; //This keeps the playing from falling directly down the screen
 
@@ -59,14 +73,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) Damage(1);
         Move();
         //this will tell the fov what direction the player is facing
-        fieldOfView.SetAimDirection(currentConeDirection);
+        fieldOfView.SetAimDirection(coneDirection);
         //this will tell fov where to draw the vision cone which will be on the player position
         fieldOfView.SetOrigin(this.transform.position);
         Animate();
         UseItem();
+        if (Input.GetMouseButtonDown(0))
+        {
+            if(hasWeapon) Assassinate(enemy);
+        }
     }
 
     void Move()
@@ -109,28 +126,32 @@ public class PlayerController : MonoBehaviour
         }*/
 
         //this will mark what direction the player is facing, 1 for up and right, -1 for left and down
+        /*since the fov can point in 8 directions and the player sprite only works for 4, the methods for what
+         * direction the player is facing have to be done different*/
+        /*cone direction will get input from both directions if player is pressing 2 keys at once else it sets
+         * one direction based on the single key pressed and makes the other zero so the cone always faces the
+         * direction the player is moving not the direction the sprite is looking*/
         if(Mathf.Abs(horizontalMove) > 0 && Mathf.Abs(verticalMove) > 0)
         {
             coneDirection.x = horizontalMove;
             coneDirection.y = verticalMove;
-            currentConeDirection = coneDirection;
 
         }else if (Mathf.Abs(horizontalMove) > 0)
         {
             if (horizontalMove > 0) coneDirection.x = 1;
             else coneDirection.x = -1;
             coneDirection.y = 0;
-            currentConeDirection = coneDirection;
 
         }else if(Mathf.Abs(verticalMove) > 0)
         {
             if (verticalMove > 0) coneDirection.y = 1;
             else coneDirection.y = -1;
             coneDirection.x = 0;
-            currentConeDirection = coneDirection;
 
         }
 
+        /*look Horizontal & Vertical are for the animator and will only say which of the 4 directions (up,down,left,right)
+         * the asset should be facing based on player movement with a preference to horizontal movement*/
         if (horizontalMove > 0)
         {
             lookHorizontal = 1;
@@ -172,9 +193,10 @@ public class PlayerController : MonoBehaviour
     public void Damage(int damage)
     {
         playerHealth -= damage;
+        damageSound.Play();
         StartCoroutine(turnRed());
     }
-
+    /*Enumerator will change the sprite renderer color from whit to red and back to white to cause the character to flash red*/
     private IEnumerator turnRed()
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
@@ -197,24 +219,25 @@ public class PlayerController : MonoBehaviour
     }
     private void UseItem()
     {
-      if (Input.GetKeyDown(KeyCode.E) && !UIManager.isGamePaused)
+      GameObject buff = GetClosest();
+      if (buff == null)
+      return;
+      if (Vector3.Distance(player.transform.position, buff.transform.position) < 0.3)
       {
-         GameObject buff = GetClosest();
-         if (buff == null)
-         return;
-         if (Vector3.Distance(GameObject.Find("JoshuaSpatial").transform.position, buff.transform.position) < 2)
+         useItemText.GetComponent<Text>().enabled = true;
+         if (Input.GetKeyDown(KeyCode.E) && !UIManager.isGamePaused)
          {
             // health pack
             if (buff.name == "health" && playerHealth < 6)
             {
                playerHealth = playerHealth + 10;
-               buff.SetActive(false);
+               Destroy(buff);
             }
             // temporary speed boost
-            else if (buff.name == "speed" && !speed)
+            else if (buff.name == "speed")
             {
-               buff.SetActive(false);
-               currentSpeed = 4.0f;
+               Destroy(buff);
+               currentSpeed = 3.3f;
                StartCoroutine(BuffTime());
             }
             // get weapon
@@ -225,6 +248,10 @@ public class PlayerController : MonoBehaviour
                weapon.SetActive(false);
             }
          }
+      }
+      else
+      {
+         useItemText.GetComponent<Text>().enabled = false;
       }
    }
 
@@ -241,7 +268,7 @@ public class PlayerController : MonoBehaviour
          return null;
       GameObject nearest = null;
       float min = Mathf.Infinity;
-      Vector3 currentPos = GameObject.Find("JoshuaSpatial").transform.position;
+      Vector3 currentPos = player.transform.position;
       foreach (GameObject g in buffs)
       {
          float distance = Vector3.Distance(g.transform.position, currentPos);
@@ -254,12 +281,34 @@ public class PlayerController : MonoBehaviour
       return nearest;
    }
 
-   /* private void OnTriggerEnter2D(Collider2D collision)
+    /* private void OnTriggerEnter2D(Collider2D collision)
+     {
+         if (collision.gameObject.CompareTag("FOV"))
+         {
+             fieldOfView = collision.gameObject.GetComponent<FieldOfView>();
+         }
+     }
+    */
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("FOV"))
+        if (collision == null) return;
+        if (collision.gameObject.GetComponent<AssasinationZone>())
         {
-            fieldOfView = collision.gameObject.GetComponent<FieldOfView>();
+            enemy = EnemiesManager.Instance.TryGetAssasinatableEnemy();
+            killText.GetComponent<Text>().enabled = true;
+        }
+        else
+        {
+           killText.GetComponent<Text>().enabled = false;
         }
     }
-   */
+
+    private void Assassinate(BasicEnemy enemy)
+    {
+        if (!enemy) return;
+        attackSound.Play();
+        enemy.Assasinate();
+    }
+
 }
