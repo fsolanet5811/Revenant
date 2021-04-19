@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4bc341d14ca3b845bc421de05cd2c38, type: 3}
   m_Name: CyclopsBaseSpeed
   m_EditorClassIdentifier: 
-  Value: 1
+  Value: 1.2

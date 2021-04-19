@@ -50,7 +50,7 @@ public class EnemyAnimator
     public void AnimateMove(Direction direction)
     {
         IsMoving = true;
-        IsAttacking = false;
+        StopAnimatingAttack();
         AnimateDirection(direction);
     }
 
@@ -70,9 +70,14 @@ public class EnemyAnimator
         IsAttacking = true;
     }
 
+    public void StopAnimatingAttack()
+    {
+        IsAttacking = false;
+    }
+
     public void AnimateIdle()
     {
         IsMoving = false;
-        IsAttacking = false;
+        StopAnimatingAttack();
     }
 }

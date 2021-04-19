@@ -8,7 +8,7 @@ public abstract class Enemy : MonoBehaviour
     protected Collider2D _physicalHitBox;
     protected bool _isMovingEnabled;
     protected AttackZone _attackZone;
-    private EnemyAnimator _animator;
+    protected EnemyAnimator _animator;
     private Rigidbody2D _rigidBody;
     private IMotionProvider _motionProvider;
     private bool _isAttacking;
@@ -39,6 +39,9 @@ public abstract class Enemy : MonoBehaviour
 
     public float CurrentHealth { get; protected set; }
 
+    public EnemyId Id { get; private set; }
+
+    public bool IsPersistent { get; set; }
 
     #region Collision
 
@@ -68,6 +71,13 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Awake()
     {
+        // The id will identify the enemy in the scene.
+        Id = new EnemyId(transform.position);
+
+        // Awake gets called immediately when instantiating a Unity object in the scene.
+        // We set the persistence here so that anything that instantiates this can change it in the same frame.
+        IsPersistent = true;
+
         _animator = new EnemyAnimator(GetComponent<Animator>());
         _attackZone = GetComponentInChildren<AttackZone>();
         _rigidBody = GetComponent<Rigidbody2D>();
@@ -76,11 +86,28 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Start()
     {
+        // See if we have a persistent state to load in.
+        EnemyState state = null;
+        if (LevelManager.Instance.CurrentInitialEnemyStates != null && LevelManager.Instance.CurrentInitialEnemyStates.TryGetValue(Id, out state))
+        {
+            CurrentHealth = state.CurrentHealth;
+            CurrentDirection = state.CurrentDirection;
+            _currentSpeed = state.CurrentSpeed;
+            transform.position = state.Pose.position;
+            transform.rotation = state.Pose.rotation;
+        }
+
         CurrentHealth = _baseHealth;
         _currentSpeed = _baseSpeed;
         _motionProvider = GetMotionProvider();
         _attackZone.SetDimensions(_attackZoneDimensions);
         EnemiesManager.Instance.AddSpawnedEnemy(this);
+
+        // If the enemy was despawned, we need to despawn it.
+        // It may seem odd that we are adding a spawned enym and then immediately despawining it,
+        // but this is so that we can keep an id in the state map saying that it was despawned.
+        if (state?.WasDespawned ?? false)
+            EnemiesManager.Instance.DespawnEnemy(this);
     }
 
     protected virtual void FixedUpdate()
@@ -114,6 +141,18 @@ public abstract class Enemy : MonoBehaviour
 
     #endregion
 
+    public EnemyState GetState()
+    {
+        Debug.Log(gameObject == null && !ReferenceEquals(gameObject, null));
+        return new EnemyState()
+        {
+            Pose = new Pose(transform.position, transform.rotation),
+            CurrentDirection = CurrentDirection,
+            CurrentSpeed = _currentSpeed,
+            CurrentHealth = CurrentHealth
+        };
+    }
+
     public void Damage(float damage)
     {
         CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
@@ -136,6 +175,13 @@ public abstract class Enemy : MonoBehaviour
             }
         }
     }
+
+    // FOR TESTING ONLY
+    //protected void OnMouseUp()
+    //{
+    //    TestLevelManager.Instance.GoToLevel(1 - TestLevelManager.Instance.CurrentLevel);
+    //}
+    //
 
     protected virtual void StartAttacking(PlayerController player)
     {

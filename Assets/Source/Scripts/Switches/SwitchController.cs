@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class SwitchController : MonoBehaviour
 {
-    [SerializeField]
-    private Switch[] _switches;
+    public static SwitchController switchController;
 
-    public bool AreAllSwitchesFlipped()
+    [SerializeField]
+    public static int flippedCount = 0;
+
+    [SerializeField]
+    private static Switch[] _switches;
+
+    public static bool AreAllSwitchesFlipped()
     {
         return _switches?.FirstOrDefault(s => s.Flipped) != null;
     }

@@ -1,0 +1,81 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class TestLevelManager
+{
+    #region Singleton
+
+    public static TestLevelManager Instance { get; }
+
+    private TestLevelManager()
+    {
+        _initialEnemyStates = new Dictionary<TestLevel, Dictionary<EnemyId, EnemyState>>();
+        foreach (TestLevel level in Enum.GetValues(typeof(TestLevel)).Cast<TestLevel>())
+            _initialEnemyStates.Add(level, null);
+    }
+
+    static TestLevelManager()
+    {
+        Instance = new TestLevelManager();
+        _levelNameMap = new Dictionary<TestLevel, string>()
+        {
+            { TestLevel.Main, "Enemies Test Scene" },
+            { TestLevel.Duplicate, "Enemies Test Scene Duplicate" }
+        };
+    }
+
+    #endregion
+
+    private static readonly Dictionary<TestLevel, string> _levelNameMap;
+
+    private readonly Dictionary<TestLevel, Dictionary<EnemyId, EnemyState>> _initialEnemyStates;
+    private bool _isSwappingLevels;
+
+    public TestLevel CurrentLevel { get; private set; }
+
+    public Dictionary<EnemyId, EnemyState> CurrentInitialEnemyStates
+    {
+        get
+        {
+            return _initialEnemyStates[CurrentLevel];
+        }
+        private set
+        {
+            _initialEnemyStates[CurrentLevel] = value;
+        }
+    }
+
+    public void GoToLevel(TestLevel level)
+    {
+        // Save the current state of the enemies.
+        CurrentInitialEnemyStates = EnemiesManager.Instance.GetEnemyStates();
+
+        // Now change scene.
+        // I beleive loading the scene will call the Awake functions, so we gotta make sure we are ready for it.
+        CurrentLevel = level;
+        SceneManager.LoadScene(_levelNameMap[level]);
+    }
+
+    public void StartSwappingLevels()
+    {
+        if(!_isSwappingLevels)
+        {
+            _isSwappingLevels = true;
+            SwapLevels();
+        }
+    }
+
+    private async void SwapLevels()
+    {
+        while(true)
+        {
+            await Task.Delay(3000);
+            GoToLevel(1 - CurrentLevel);
+        }
+    }
+}

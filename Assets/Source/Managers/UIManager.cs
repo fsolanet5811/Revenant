@@ -11,12 +11,16 @@ public class UIManager : MonoBehaviour
    public static bool isGamePaused = false;
    private int health;
    public static GameObject pauseMenu;
+   private GameObject noBuff, yesBuff, uiSpeed;
    public GameObject noWeapon, yesWeapon, uiKnife;
    public GameObject bar6, bar5, bar4, bar3, bar2, bar1, bar0;
+   private int countdownTimer;
+   public Text countdownText;
 
    void Awake()
    {
       CreateManager();
+      FindBuffUI();
    }
 
    void Update()
@@ -30,6 +34,12 @@ public class UIManager : MonoBehaviour
             Pause();
          else
             Resume();
+      }
+
+      if (PlayerController.isUsingCDTimer)
+      {
+         StartCoroutine(SpeedBuffTimer());
+         PlayerController.isUsingCDTimer = false;
       }
 
       SetHealthBar();
@@ -117,7 +127,9 @@ public class UIManager : MonoBehaviour
       {
          bar0.GetComponent<Image>().enabled = true;
          DisableBars(bar6, bar5, bar4, bar3, bar2, bar1);
-         SceneManager.LoadScene("dead");
+         PlayerController.hasWeapon = false;
+            LevelManager.Instance.GoToLevel(Level.Death);
+            //SceneManager.LoadScene("dead");
       }
    }
 
@@ -163,7 +175,7 @@ public class UIManager : MonoBehaviour
       {
          noWeapon.SetActive(false);
          yesWeapon.SetActive(true);
-         if (PlayerController.weapon.name == "knife")
+         if (PlayerController.weapon.name.Contains("knife"))
             uiKnife.SetActive(true);
       }
       else
@@ -182,6 +194,46 @@ public class UIManager : MonoBehaviour
       noWeapon = GameObject.Find("No Weapon");
       yesWeapon = GameObject.Find("Yes Weapon");
       uiKnife = GameObject.Find("uiKnife");
+   }
+
+   private void FindBuffUI()
+   {
+      noBuff = GameObject.Find("noBuff");
+      yesBuff = GameObject.Find("yesBuff");
+      uiSpeed = GameObject.Find("uiSpeed");
+
+      if (noBuff != null)
+      {
+         yesBuff.SetActive(false);
+         noBuff.SetActive(true);
+         uiSpeed.SetActive(false);
+      }
+      else
+         return;
+   }
+
+   IEnumerator SpeedBuffTimer()
+   {
+      countdownTimer = 20;
+
+      noBuff.SetActive(false);
+      yesBuff.SetActive(true);
+      uiSpeed.SetActive(true);
+      countdownText.GetComponent<Text>().enabled = true;
+
+      while(countdownTimer > 0)
+      {
+         countdownText.text = countdownTimer.ToString();
+
+         yield return new WaitForSeconds(1);
+
+         countdownTimer--;
+      }
+
+      noBuff.SetActive(true);
+      yesBuff.SetActive(false);
+      uiSpeed.SetActive(false);
+      countdownText.GetComponent<Text>().enabled = false;
    }
 
    private void CreateManager()

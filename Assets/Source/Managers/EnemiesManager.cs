@@ -18,12 +18,16 @@ public class EnemiesManager
     {
         _enemies = new List<Enemy>();
         _assasinatableEnemies = new List<BasicEnemy>();
+        _enemySpawner = new EnemySpawner();
+        _despawnedEnemies = new List<EnemyId>();
     }
 
     #endregion
 
     private readonly List<Enemy> _enemies;
     private readonly List<BasicEnemy> _assasinatableEnemies;
+    private readonly EnemySpawner _enemySpawner;
+    private readonly List<EnemyId> _despawnedEnemies;
 
     /// <summary>
     /// Adds an enemy to the list of enemies that are spawned into the game.
@@ -38,6 +42,29 @@ public class EnemiesManager
     }
 
     /// <summary>
+    /// Spawns an enemy into the game.
+    /// </summary>
+    /// <typeparam name="T">
+    /// The type of enemy to spawn into the game.
+    /// </typeparam>
+    /// <param name="position">
+    /// Where the enemy should be spawned.
+    /// </param>
+    /// <returns>
+    /// The spawned enemy.
+    /// </returns>
+    public T SpawnEnemy<T>(Vector2 position) where T : Enemy
+    {
+        // Spawn in the enemy.
+        T enemy = _enemySpawner.Spawn<T>(position);
+
+        // Keep track of this enemy.
+        AddSpawnedEnemy(enemy);
+
+        return enemy;
+    }
+
+    /// <summary>
     /// Checks to see if any of the enemies are alerted.
     /// </summary>
     /// <returns>
@@ -45,7 +72,7 @@ public class EnemiesManager
     /// </returns>
     public bool IsEnemyAlerted()
     {
-        return _enemies.Exists(e => e is BasicEnemy be && be.IsAlerted);
+        return _enemies.Exists(e => e is AlertableEnemy ae && ae.IsAlerted);
     }
 
     /// <summary>
@@ -57,12 +84,50 @@ public class EnemiesManager
     /// </param>
     public void DespawnEnemy(Enemy enemy)
     {
-        // You obviously cannot assasinate an enemy if it is despawned.
+        RemovedSpawnedEnemy(enemy);
+
+        // Keep track that we despawned this enemy.
+        // Because it was removed from the list in the above call, it's state will not be captured.
+        // We actually care about despawned enemies that are persistent.
+        if(enemy.IsPersistent)
+            _despawnedEnemies.Add(enemy.Id);
+
+        Object.Destroy(enemy.gameObject);
+    }
+
+    /// <summary>
+    /// Removes an enemy from the list of enemies in the game.
+    /// Does not actually despawn the enemy.
+    /// </summary>
+    /// <param name="enemy">
+    /// The enemy to remove from the list.
+    /// </param>
+    public void RemovedSpawnedEnemy(Enemy enemy)
+    {
+        // You cannot assasinate an enemy if we are not keeping track of it.
         if (enemy is BasicEnemy be)
             RemoveAssasinatableEnemy(be);
 
-        Object.Destroy(enemy.gameObject);
         _enemies.Remove(enemy);
+    }
+
+    /// <summary>
+    /// Despawns all enemies in the list of enemies.
+    /// </summary>
+    public void DespawnAllEnemies()
+    {
+        while (_enemies.Any())
+            DespawnEnemy(_enemies.First());
+    }
+
+    /// <summary>
+    /// removes all enemies from the list of enemies in the game.
+    /// Does not despawn any of them.
+    /// </summary>
+    public void RemoveAllSpawnedEnemies()
+    {
+        while (_enemies.Any())
+            RemovedSpawnedEnemy(_enemies.First());
     }
 
     /// <summary>
@@ -100,6 +165,27 @@ public class EnemiesManager
         // Make sure we do not give them an enemy that is alerted.
         CleanAssasinatableEnemies();
         return _assasinatableEnemies.FirstOrDefault();
+    }
+
+    /// <summary>
+    /// Gets a current snapshot of all the enemy states.
+    /// </summary>
+    /// <returns>
+    /// The states of all the enemys (spawned and despawned).
+    /// </returns>
+    public Dictionary<EnemyId, EnemyState> GetEnemyStates()
+    {
+        Dictionary<EnemyId, EnemyState> states = new Dictionary<EnemyId, EnemyState>();
+
+        // Load in all the despawned enemies.
+        foreach (EnemyId id in _despawnedEnemies)
+            states.Set(id, EnemyState.Despawned());
+
+        // Now grab the states from all of our enemies that are persistent.
+        foreach (Enemy enemy in _enemies.Where(e => e.IsPersistent))
+            states.Set(enemy.Id, enemy.GetState());
+
+        return states;
     }
 
     private void CleanAssasinatableEnemies()

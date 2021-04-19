@@ -46,3 +46,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Furniture
+    uniqueID: 1872347861
+    locked: 0
+  - name: Sink
+    uniqueID: 727801269
+    locked: 0
+  - name: Player
+    uniqueID: 351143913
+    locked: 0

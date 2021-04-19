@@ -10,7 +10,7 @@ public class Field_of_View : MonoBehaviour
     [SerializeField] private Vector3 origin;
     private float startingAngle = 0f;
     [SerializeField] private float fov;
-    private float startingFov = 35f;
+    private float startingFov = 40f;
     [SerializeField] private float viewDistance;
     private float lastDirection;
     private bool far = false;
@@ -109,7 +109,7 @@ public class Field_of_View : MonoBehaviour
     {
         if (far)
         {
-            fov =35;
+            fov =40;
             viewDistance = 5;
             far = false;
         }

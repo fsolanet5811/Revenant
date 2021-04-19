@@ -8,12 +8,13 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update :p
     [SerializeField] private Field_of_View fieldOfView;
-    [SerializeField] float baseSpeed = 3.0f;
+    private float baseSpeed = 1.5f;
     //may or may not have speed potions, delete baseSpeed and assign value to currentSpeed if not.
     [SerializeField] float currentSpeed;
     [SerializeField] public static int playerHealth;
 
     public static bool hasWeapon = false;
+    public static bool isUsingCDTimer = false;
     public static GameObject weapon = null;
     private GameObject player;
     private GameObject useItemText;
@@ -54,8 +55,10 @@ public class PlayerController : MonoBehaviour
         player = GameObject.Find("JoshuaSpatial");
         useItemText = GameObject.Find("UseItemText");
         killText = GameObject.Find("KillText");
-        useItemText.GetComponent<Text>().enabled = false;
-        killText.GetComponent<Text>().enabled = false;
+        if (useItemText != null)
+            useItemText.GetComponent<Text>().enabled = false;
+        if (killText != null)
+            killText.GetComponent<Text>().enabled = false;
 
         Physics2D.gravity = Vector2.zero; //This keeps the playing from falling directly down the screen
 
@@ -221,27 +224,30 @@ public class PlayerController : MonoBehaviour
     {
       GameObject buff = GetClosest();
       if (buff == null)
-      return;
+         return;
       if (Vector3.Distance(player.transform.position, buff.transform.position) < 0.3)
       {
-         useItemText.GetComponent<Text>().enabled = true;
+         if (useItemText != null)
+            useItemText.GetComponent<Text>().enabled = true;
+
          if (Input.GetKeyDown(KeyCode.E) && !UIManager.isGamePaused)
          {
             // health pack
-            if (buff.name == "health" && playerHealth < 6)
+            if (buff.name.Contains("health") && playerHealth < 6)
             {
                playerHealth = playerHealth + 10;
                Destroy(buff);
             }
             // temporary speed boost
-            else if (buff.name == "speed")
+            else if (buff.name.Contains("speed"))
             {
                Destroy(buff);
-               currentSpeed = 3.3f;
+               isUsingCDTimer = true;
+               currentSpeed = 2f;
                StartCoroutine(BuffTime());
             }
             // get weapon
-            else if (buff.name == "knife" && !hasWeapon)
+            else if (buff.name.Contains("knife") && !hasWeapon)
             {
                hasWeapon = true;
                weapon = buff;
@@ -251,14 +257,15 @@ public class PlayerController : MonoBehaviour
       }
       else
       {
-         useItemText.GetComponent<Text>().enabled = false;
+         if (useItemText != null)
+            useItemText.GetComponent<Text>().enabled = false;
       }
    }
 
    IEnumerator BuffTime()
    {
       yield return new WaitForSeconds(20);
-      currentSpeed = 3.0f;
+      currentSpeed = 1.5f;
    }
 
    private GameObject GetClosest()
@@ -296,11 +303,13 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.GetComponent<AssasinationZone>())
         {
             enemy = EnemiesManager.Instance.TryGetAssasinatableEnemy();
-            killText.GetComponent<Text>().enabled = true;
+            if (killText != null && hasWeapon)
+               killText.GetComponent<Text>().enabled = true;
         }
         else
         {
-           killText.GetComponent<Text>().enabled = false;
+           if (killText != null)
+               killText.GetComponent<Text>().enabled = false;
         }
     }
 

@@ -19,7 +19,8 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-      SceneManager.LoadScene("Better Level Test");
+        LevelManager.Instance.GoToLevel(Level.IntroLevel);
+      //SceneManager.LoadScene("Better Level Test");
     }
 
     public void Quit()
@@ -29,6 +30,7 @@ public class MainMenu : MonoBehaviour
 
     public void ToMainMenu()
     {
-      SceneManager.LoadScene("Main_Menu");
-   }
+        LevelManager.Instance.GoToLevel(Level.MainMenu);
+      //SceneManager.LoadScene("Main_Menu");
+    }
 }

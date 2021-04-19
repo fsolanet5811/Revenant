@@ -33,6 +33,12 @@ public abstract class AStarMotionProvider : IMotionProvider
     public virtual Vector2 GetMotion()
     {
         _path.MovementUpdate(Time.deltaTime, out Vector3 nextPosition, out _);
+
+        // Sometimes the astar will think we are at the destination even though we are farther than the threshold away.
+        // Luckily they have a flag for this!
+        if (_path.reachedDestination)
+            return Vector2.zero;
+
         return nextPosition - _self.position;
     }
 }

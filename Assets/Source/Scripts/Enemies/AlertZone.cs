@@ -8,6 +8,8 @@ public class AlertZone : MonoBehaviour
     private Collider2D _alertRelease;
     private Direction _currentDirection;
 
+    public LayerMask ObstacleLayer;
+
     public bool IsAlerted { get; private set; }
 
     public Transform AlertTarget { get; set; }
@@ -65,13 +67,31 @@ public class AlertZone : MonoBehaviour
     {
         if(_alertTrigger.bounds.Contains(AlertTarget.position))
         {
-            // They are inside the trigger zone. This means we are for sure alerted.
-            IsAlerted = true;
+            // We are alerted if we are in the trigger zone and can cast to the target.
+            IsAlerted = CanCastToTarget();
         }
-        else if(!_alertRelease.bounds.Contains(AlertTarget.position))
+        else if(_alertRelease.bounds.Contains(AlertTarget.position))
         {
+            // No need for an unnecessary calculation.
+            if(IsAlerted && !CanCastToTarget())
+            {
+                IsAlerted = false;
+            }
+        }
+        else
+        {
+            // Outside the release zone. We are definitely not alerted.
             IsAlerted = false;
         }
     }
 
+    private bool CanCastToTarget()
+    {
+        // This is a decent way of accounting for obstacles in the way of the line of sight.
+        Vector3 towardsTarget = AlertTarget.position - transform.position;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, towardsTarget, towardsTarget.magnitude, ObstacleLayer);
+
+        // We can cast to the target if there is no collider between us.
+        return !hit.collider;
+    }
 }
